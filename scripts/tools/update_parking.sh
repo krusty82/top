@@ -8,7 +8,7 @@
 
 
 DBname='gis'
-cd /home/otmuser/OpenTopoMap/mapnik/tools/
+cd tools
 
 ###### Prepare #########
 #
