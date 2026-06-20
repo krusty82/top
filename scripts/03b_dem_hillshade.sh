@@ -1,0 +1,49 @@
+#!/bin/bash
+
+
+cd /mnt/data
+
+if [ ! -d "/mnt/data/srtm" ]; then
+  echo "Please put some HGT ZIP files into the directory /mnt/data/srtm."
+  exit
+fi
+cd srtm
+
+
+cd hgt
+cd VIEW3
+for hgtfile in *.hgt; do gdal_fillnodata.py $hgtfile $hgtfile.tif; done
+#rm -f *.hgt
+
+gdal_merge.py -n 32767 -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW -co PREDICTOR=2 -o ../../raw.tif *.hgt.tif
+
+cd ..
+cd ..
+#rm -rf unpacked
+
+#ggf. hgt sortieren nach Auflösung und getrennt bearbeiten. Am Ende mit gdalwarp kombinieren:
+
+#gdalwarp -overwrite -multi -wm 2G -wo NUM_THREADS=ALL_CPUS -co BIGTIFF=YES -co COMPRESS=LZW euro.tif planet.tif raw.tif
+
+
+gdalwarp -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW -co PREDICTOR=2 -t_srs epsg:3857 -r bilinear -tr 1000 1000 raw.tif warp-1000.tif
+gdalwarp -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW -co PREDICTOR=2 -t_srs epsg:3857 -r bilinear -tr 5000 5000 raw.tif warp-5000.tif
+gdalwarp -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW -co PREDICTOR=2 -t_srs epsg:3857 -r bilinear -tr 500 500 raw.tif warp-500.tif
+gdalwarp -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW -co PREDICTOR=2 -t_srs epsg:3857 -r bilinear -tr 150 150 raw.tif warp-150.tif
+gdalwarp -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW -co PREDICTOR=2 -t_srs epsg:3857 -r bilinear -tr 90 90 raw.tif warp-90.tif
+# 30m - for the detail hillshade
+gdalwarp -co BIGTIFF=YES -co TILED=YES -co COMPRESS=LZW -co PREDICTOR=2 -t_srs epsg:3857 -r bilinear -tr 30 30 raw.tif warp-30.tif
+
+# relief for zoom factors 1-4
+gdaldem color-relief -co COMPRESS=LZW -co PREDICTOR=2 -alpha warp-5000.tif /home/otm/relief_color_text_file.txt relief-5000.tif
+# relief for zoom factors 5-8
+gdaldem color-relief -co COMPRESS=LZW -co PREDICTOR=2 -alpha warp-500.tif /home/otm/relief_color_text_file.txt relief-500.tif
+# relief for zoom factors 9-10
+gdaldem color-relief -co COMPRESS=LZW -co PREDICTOR=2 -alpha warp-150.tif /home/otm/relief_color_text_file.txt relief-150.tif
+
+# create hillshade
+gdaldem hillshade -z 7 -compute_edges -co COMPRESS=JPEG warp-5000.tif hillshade-5000.tif
+gdaldem hillshade -z 7 -compute_edges -co BIGTIFF=YES -co TILED=YES -co COMPRESS=JPEG warp-1000.tif hillshade-1000.tif
+gdaldem hillshade -z 5 -compute_edges -co BIGTIFF=YES -co TILED=YES -co COMPRESS=JPEG warp-500.tif hillshade-500.tif
+gdaldem hillshade -z 2 -co compress=lzw -co predictor=2 -co bigtiff=yes -compute_edges warp-30.tif hillshade-30.tif
+gdal_translate -co compress=JPEG -co bigtiff=yes -co tiled=yes hillshade-30.tif hillshade-30-jpeg.tif
