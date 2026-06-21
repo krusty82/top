@@ -39,7 +39,7 @@
 	</Rule>
 </Style>
 <Layer name="searelief-150">
-	<StyleName>relief-150</StyleName>
+	<StyleName>searelief-150</StyleName>
 	<Datasource>
 		<Parameter name="type">gdal</Parameter>
 		<Parameter name="file">/mnt/data/srtm/searelief-150-jpeg.tif</Parameter>

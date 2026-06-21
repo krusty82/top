@@ -8,3 +8,7 @@ CREATE INDEX planet_osm_point_islands_way_idx
 ON planet_osm_point
 USING GIST (way)
 WHERE place IN ('island', 'islet');
+
+CREATE INDEX planet_osm_point_place_sea_idx
+ON planet_osm_point (place)
+WHERE place = 'sea';

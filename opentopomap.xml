@@ -492,7 +492,7 @@
     <StyleName>text-islands-lowzoom</StyleName>
     <Datasource>
         <Parameter name="table">
-			(SELECT way,name,place,way_area FROM planet_osm_polygon where place in ('island','islet')) AS islands
+			(SELECT way,get_localized_placename(name,"name:de",int_name,"name:en",true) as name,place,way_area FROM planet_osm_polygon where place in ('island','islet')) AS islands
         </Parameter>
         <Parameter name="geometry_field">way</Parameter>
         <Parameter name="srid">3857</Parameter>
