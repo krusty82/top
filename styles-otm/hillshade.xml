@@ -58,7 +58,7 @@
         <StyleName>hillshade-150</StyleName>
         <Datasource>
                 <Parameter name="type">gdal</Parameter>
-                <Parameter name="file">/mnt/data/srtm/hillshade-150.tif</Parameter>
+                <Parameter name="file">/mnt/data/srtm/hillshade.vrt</Parameter>
                 <Parameter name="format">tiff</Parameter>
         </Datasource>
 </Layer>

@@ -7,7 +7,7 @@
                         size="12"
                         fill="black"
                         opacity="0.5"       
-                        halo-radius="0.5"
+                        halo-radius="0.3"
                         halo-fill="white"
                         halo-opacity="0.7"
                         wrap-width="65"
@@ -22,16 +22,79 @@
     </Rule>
 	<Rule>
         &maxscale_zoom7;
-        &minscale_zoom7;
+        &minscale_zoom8;
         <Filter>[place] = 'island' and [way_area] &gt; 1E10</Filter>
         <TextSymbolizer fontset-name="sans-condensed-bold"
-                        size="14"
+                        size="20"
                         fill="black"
                         opacity="0.5"       
-                        halo-radius="0.5"
+                        halo-radius="1.3"
                         halo-fill="white"
-                        halo-opacity="0.3"
+                        halo-opacity="0.7"
                         wrap-width="75"
+                        placement="point"
+                        allow-overlap="true"
+						placement-type="simple"
+  						placements="N,NW,W,SW,S,SE,E,NE,10,8"
+                        avoid-edges="false"
+                        >
+            [name]
+        </TextSymbolizer>
+    </Rule>
+    <Rule>
+        &maxscale_zoom9;
+        &minscale_zoom10;
+        <Filter>[place] = 'island' and [way_area] &gt; 2E8</Filter>
+        <TextSymbolizer fontset-name="sans-condensed-bold"
+                        size="20"
+                        fill="black"
+                        opacity="0.7"       
+                        halo-radius="1.3"
+                        halo-fill="white"
+                        halo-opacity="0.7"
+                        wrap-width="75"
+                        placement="point"
+                        allow-overlap="true"
+						placement-type="simple"
+  						placements="N,NW,W,SW,S,SE,E,NE,10,8"
+                        avoid-edges="false"
+                        >
+            [name]
+        </TextSymbolizer>
+    </Rule>
+    <Rule>
+        &maxscale_zoom11;
+        &minscale_zoom11;
+        <Filter>[way_area] &gt; 1E7</Filter>
+        <TextSymbolizer fontset-name="sans-condensed-bold"
+                        size="12"
+                        fill="black"
+                        opacity="0.4"       
+                        halo-radius="1.5"
+                        halo-fill="white"
+                        halo-opacity="0.5"
+                        wrap-width="45"
+                        placement="point"
+                        allow-overlap="true"
+						placement-type="simple"
+  						placements="N,NW,W,SW,S,SE,E,NE,10,8"
+                        avoid-edges="false"
+                        >
+            [name]
+        </TextSymbolizer>
+    </Rule>
+        <Rule>
+        &maxscale_zoom12;
+        &minscale_zoom12;
+        <Filter>[way_area] &gt; 2E6</Filter>
+        <TextSymbolizer fontset-name="sans-condensed-bold"
+                        size="12"
+                        fill="black"
+                        opacity="0.4"       
+                        halo-radius="1.5"
+                        halo-fill="white"
+                        halo-opacity="0.5"
+                        wrap-width="45"
                         placement="point"
                         allow-overlap="true"
 						placement-type="simple"
@@ -43,8 +106,8 @@
     </Rule>
   <Rule>
         &maxscale_zoom13;
-        &minscale_zoom14;
-        <Filter>[place] = 'islet'</Filter>
+        &minscale_zoom13;
+        <Filter>[way_area] &gt; 5E5</Filter>
         <TextSymbolizer fontset-name="sans-condensed-bold"
                         size="12"
                         fill="black"
@@ -52,6 +115,48 @@
                         halo-radius="1.5"
                         halo-fill="white"
                         halo-opacity="0.7"
+                        wrap-width="45"
+                        placement="point"
+                        allow-overlap="true"
+						placement-type="simple"
+  						placements="N,NW,W,SW,S,SE,E,NE,10,8"
+                        avoid-edges="false"
+                        >
+            [name]
+        </TextSymbolizer>
+    </Rule>
+      <Rule>
+        &maxscale_zoom14;
+        &minscale_zoom14;
+        <Filter>[way_area] &gt; 1E5</Filter>
+        <TextSymbolizer fontset-name="sans-condensed-bold"
+                        size="12"
+                        fill="black"
+                        opacity="0.5"       
+                        halo-radius="1.5"
+                        halo-fill="white"
+                        halo-opacity="0.7"
+                        wrap-width="45"
+                        placement="point"
+                        allow-overlap="true"
+						placement-type="simple"
+  						placements="N,NW,W,SW,S,SE,E,NE,10,8"
+                        avoid-edges="false"
+                        >
+            [name]
+        </TextSymbolizer>
+    </Rule>
+      <Rule>
+        &maxscale_zoom15;
+        &minscale_zoom17;
+        <Filter>[place] = 'islet'</Filter>
+        <TextSymbolizer fontset-name="sans-condensed-bold"
+                        size="12"
+                        fill="black"
+                        opacity="0.4"       
+                        halo-radius="1.5"
+                        halo-fill="white"
+                        halo-opacity="0.5"
                         wrap-width="45"
                         placement="point"
                         allow-overlap="true"
