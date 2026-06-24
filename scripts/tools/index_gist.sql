@@ -12,3 +12,7 @@ WHERE place IN ('island', 'islet');
 CREATE INDEX planet_osm_point_place_sea_idx
 ON planet_osm_point (place)
 WHERE place = 'sea';
+
+CREATE INDEX planet_osm_point_peak_volcano_idx
+ON planet_osm_point ("natural")
+WHERE "natural" IN ('peak','volcano');
