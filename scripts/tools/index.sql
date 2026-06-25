@@ -60,3 +60,16 @@ CREATE INDEX IF NOT EXISTS idx_line_power
 
 CREATE INDEX IF NOT EXISTS idx_point_power
   ON planet_osm_point (power);  
+  
+CREATE INDEX planet_osm_point_parking_idx
+ON planet_osm_point (amenity)
+WHERE amenity = 'parking';
+
+CREATE INDEX planet_osm_polygon_parking_idx
+ON planet_osm_polygon (amenity)
+WHERE amenity = 'parking';
+
+CREATE INDEX planet_osm_point_viewpoint_idx
+ON planet_osm_point (way)
+WHERE tourism = 'viewpoint'
+  AND direction IS NOT NULL;

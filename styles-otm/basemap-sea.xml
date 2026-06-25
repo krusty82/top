@@ -1,7 +1,7 @@
 
 <Style name="searelief-5000">
 	<Rule>
-		&maxscale_zoom1;
+		&maxscale_zoom0;
 		&minscale_zoom4;
 		<RasterSymbolizer opacity="1" scaling="bilinear" />
 	</Rule>
