@@ -3,35 +3,35 @@
 	<Rule>
 		&maxscale_zoom11;
 		&minscale_zoom11;
-		<Filter>([ele] % 100 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 100 = 0)</Filter>
 		<LineSymbolizer stroke="#c45700" stroke-width="0.2"  comp-op="multiply"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom12;
 		&minscale_zoom12;
-		<Filter>([ele] % 100 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 100 = 0)</Filter>
 		<LineSymbolizer stroke="#c45700" stroke-width="0.4"  comp-op="multiply"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom13;
-		<Filter>([ele] % 100 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 100 = 0)</Filter>
 		<LineSymbolizer stroke="#c45700" stroke-width="0.5" />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
-		<Filter>([ele] % 100 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 100 = 0)</Filter>
 		<LineSymbolizer stroke="#c45700" stroke-width="0.6" smooth="0.8"  comp-op="multiply"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom14;
-		<Filter>([ele] % 100 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 100 = 0)</Filter>
 		<TextSymbolizer
 			comp-op="multiply"
 			fontset-name="sans-book"
-			size="7"
+			size="8"
 			fill="rgb(140,90,40)"
 			halo-fill="rgba(255,240,220,0.7)"
 			halo-radius="1"
@@ -49,25 +49,25 @@
 	<Rule>
 		&maxscale_zoom11;
 		&minscale_zoom11;
-		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0)</Filter>
 		<LineSymbolizer stroke="#c45700" stroke-width="0.2"  comp-op="multiply"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom13;
-		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0)</Filter>
 		<LineSymbolizer stroke="#c45700" stroke-width="0.3" />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
-		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0) and ([ele] != 0)</Filter>
-		<LineSymbolizer stroke="#c45700" stroke-width="0.4" smooth="0.5"  comp-op="multiply"/>
+		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0)</Filter>
+		<LineSymbolizer stroke="#c45700" stroke-width="0.4" smooth="1"  comp-op="multiply"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom14;
-		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0)</Filter>
 		<TextSymbolizer
 			comp-op="multiply"
 			fontset-name="sans-book"
@@ -81,6 +81,7 @@
 			max-char-angle-delta="10"
 			label-position-tolerance="100"
 			minimum-path-length="200"
+			margin="200"
 			spacing="200"
 		>[ele]</TextSymbolizer>
 	</Rule>
@@ -89,24 +90,24 @@
 	<Rule>
 		&maxscale_zoom12;
 		&minscale_zoom12;
-		<Filter>([ele] % 100 != 0) and ([ele] % 20 = 0) and ([ele] != 0)</Filter>
-		<LineSymbolizer stroke="#c45700" stroke-width="0.2" smooth="0.5" comp-op="multiply"/>
+		<Filter>([ele] % 100 != 0) and ([ele] % 20 = 0)</Filter>
+		<LineSymbolizer stroke="#c45700" stroke-width="0.2" smooth="1" comp-op="multiply"/>
 	</Rule>
 
 	<!-- 10 m -->
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom13;
-		<Filter>([ele] % 50 != 0) and ([ele] % 10 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 50 != 0) and ([ele] % 10 = 0)</Filter>
 		<LineSymbolizer stroke="#c45700" stroke-width="0.2" smooth="0.5" />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
-		<Filter>([ele] % 50 != 0) and ([ele] % 10 = 0) and ([ele] != 0)</Filter>
-		<LineSymbolizer stroke="#c45700" stroke-width="0.2" smooth="0.5" comp-op="multiply"/>
+		<Filter>([ele] % 50 != 0) and ([ele] % 10 = 0)</Filter>
+		<LineSymbolizer stroke="#c45700" stroke-width="0.2" smooth="1" comp-op="multiply"/>
 	</Rule>
-	<Rule>
+<!--	<Rule>
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<Filter>([ele] % 10 = 0) and ([ele] != 0)</Filter>
@@ -122,25 +123,46 @@
 			max-char-angle-delta="10"
 			label-position-tolerance="100"
 			minimum-path-length="300"
+			margin="50"
 			spacing="800"
 		>[ele]</TextSymbolizer>
-	</Rule>
-	<Rule>
-		&maxscale_zoom16;
+	</Rule> -->
+		<Rule>
+		&maxscale_zoom15;
 		&minscale_zoom17;
-		<Filter>([ele] % 10 = 0) and ([ele] != 0)</Filter>
+		<Filter>([ele] % 50 = 0)</Filter>
 		<TextSymbolizer
 			comp-op="multiply"
 			fontset-name="sans-book"
-			size="9"
+			size="10"
 			fill="rgb(140,90,40)"
 			halo-fill="rgba(255,240,220,0.4)"
 			halo-radius="1.5"
 			upright="left"
 			placement="line"
 			max-char-angle-delta="10"
-			label-position-tolerance="100"
+			label-position-tolerance="200"
 			minimum-path-length="300"
+			spacing="800"
+		>[ele]</TextSymbolizer>
+	</Rule>
+	<Rule>
+		&maxscale_zoom15;
+		&minscale_zoom17;
+		<Filter>([ele] % 10 = 0) and ([ele] % 50 != 0)</Filter>
+		<TextSymbolizer
+			comp-op="multiply"
+			fontset-name="sans-book"
+			size="8"
+			fill="rgb(140,90,40)"
+			halo-fill="rgba(255,240,220,0.4)"
+			halo-radius="1.5"
+			upright="left"
+			placement="line"
+			max-char-angle-delta="10"
+			label-position-tolerance="200"
+			minimum-path-length="300"
+			margin="170"
 			spacing="800"
 		>[ele]</TextSymbolizer>
 	</Rule>

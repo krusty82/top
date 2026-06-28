@@ -1,7 +1,7 @@
 #!/bin/bash
 osm2pgsql-replication \
     update -d gis \
-    --max-diff-size 100  --  \
+    --max-diff-size 500  --  \
     -G \
     -C 3000 --number-processes 4 \
     --flat-nodes /mnt/1tb/tablespace/flat-nodes/gis-flat-nodes.bin  \
