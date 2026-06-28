@@ -39,7 +39,7 @@
 		&maxscale_zoom14;
 		&minscale_zoom17;
 		<Filter>([tourism] = 'viewpoint' and [firstangle]=360)</Filter>
-        <PointSymbolizer file="symbols-otm/viewpoint_360.svg" transform="rotate([firstrotation]) scale(0.9)" ignore-placement="true"  />
+        <PointSymbolizer file="symbols-otm/viewpoint_360.svg" transform="rotate([firstrotation]) scale(0.7)" ignore-placement="true"  />
 	</Rule>
 
 
@@ -85,5 +85,6 @@
 		<Filter>([tourism] = 'viewpoint' and [secondangle]=360)</Filter>
         <PointSymbolizer file="symbols-otm/viewpoint_360.svg" transform="rotate([secondrotation]) scale(0.9)" ignore-placement="true"  />
 	</Rule>
+
 </Style>
 

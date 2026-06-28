@@ -69,8 +69,13 @@
 <Style name="hillshade-30">
 	<Rule>
 		&maxscale_zoom9;
-		&minscale_zoom17;
+		&minscale_zoom13;
 		<RasterSymbolizer comp-op="grain-merge" opacity="0.83" scaling="bicubic" />
+	</Rule>
+	<Rule>
+		&maxscale_zoom14;
+		&minscale_zoom17;
+		<RasterSymbolizer comp-op="grain-merge" opacity="0.5" scaling="bicubic" />
 	</Rule>
 </Style>
 <Layer name="hillshade-30">
@@ -79,5 +84,23 @@
 		<Parameter name="type">gdal</Parameter>
 		<Parameter name="file">/mnt/data/srtm/hillshade.vrt</Parameter>
 		<Parameter name="format">tiff</Parameter>
+	</Datasource>
+</Layer>
+
+<Style name="hillshade-brighten">
+	<Rule>
+		&maxscale_zoom14;
+		&minscale_zoom17;
+		<PolygonSymbolizer fill="rgb(180,180,180)" fill-opacity="1.0" comp-op="grain-merge" />
+	</Rule>
+</Style>
+<Layer name="hillshade-brighten">
+	<StyleName>hillshade-brighten</StyleName>
+	<Datasource>
+		<Parameter name="type">csv</Parameter>
+		<Parameter name="inline">
+wkt
+"POLYGON((-20037508 -20037508,20037508 -20037508,20037508 20037508,-20037508 20037508,-20037508 -20037508))"
+		</Parameter>
 	</Datasource>
 </Layer>

@@ -18,7 +18,7 @@
 	<Rule>
 		&maxscale_zoom0;
 		&minscale_zoom4;
-		<RasterSymbolizer opacity="0.9" scaling="bilinear" />
+		<RasterSymbolizer opacity="1" scaling="bilinear" />
 	</Rule>
 </Style>
 <Layer name="relief-5000">
@@ -34,7 +34,7 @@
 	<Rule>
 		&maxscale_zoom5;
 		&minscale_zoom8;
-		<RasterSymbolizer opacity="0.9" scaling="bilinear" />
+		<RasterSymbolizer opacity="1" scaling="bilinear" />
 	</Rule>
 </Style>
 <Layer name="relief-500">
@@ -50,7 +50,7 @@
 	<Rule>
 		&maxscale_zoom9;
 		&minscale_zoom10;
-		<RasterSymbolizer opacity="0.9" scaling="bilinear" />
+		<RasterSymbolizer opacity="1" scaling="bilinear" />
 	</Rule>
 </Style>
 <Layer name="relief-150">
