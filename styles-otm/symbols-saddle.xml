@@ -3,19 +3,19 @@
 		&maxscale_zoom12;
 		&minscale_zoom12;
 		<Filter>([natural] = 'saddle' or [mountain_pass] = 'yes') and [has_way]</Filter>
-		<PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(1)" />
+		<PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(0.9)" />
 	</Rule>
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom13;
 		<Filter>([natural] = 'saddle' or [mountain_pass] = 'yes') and [has_way]</Filter>
-		<PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(1.4)" />
+		<PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(1.2)" />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom14;
 		<Filter>([natural] = 'saddle' or [mountain_pass] = 'yes') and [has_way]</Filter>
-		<PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(1.7)" />
+		<PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(1.5)" />
 	</Rule>
     <Rule>
 		&maxscale_zoom13;
@@ -34,13 +34,13 @@
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<Filter>([natural] = 'saddle' or [mountain_pass] = 'yes') and [has_way]</Filter>
-        <PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(2)" />
+        <PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(1.8)" />
 	</Rule>
 	<Rule>
 		&maxscale_zoom16;
 		&minscale_zoom17;
 		<Filter>([natural] = 'saddle' or [mountain_pass] = 'yes') and [has_way]</Filter>
-        <PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(2.5)" />
+        <PointSymbolizer allow-overlap="true" file="symbols-otm/saddle-15.svg" transform="rotate([direction]) scale(2.2)" />
 	</Rule>
     <Rule>
 		&maxscale_zoom15;
