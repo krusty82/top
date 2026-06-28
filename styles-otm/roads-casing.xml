@@ -488,6 +488,12 @@
 	<Rule>
 		&maxscale_zoom16;
 		&minscale_zoom16;
+		<Filter>([trail_visibility] is null or ([trail_visibility]!='no' and [trail_visibility]!='horrible' and [trail_visibility]!='bad')) and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and [sac_scale] is null and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
+		<LineSymbolizer stroke="black" stroke-width="1.5" stroke-dasharray="1.8,3.2"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom16;
+		&minscale_zoom16;
 		<Filter>([trail_visibility] is null or ([trail_visibility]!='no' and [trail_visibility]!='horrible' and [trail_visibility]!='bad')) and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and [sac_scale] = 'hiking' and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
 		<LineSymbolizer stroke="black" stroke-width="1.5" stroke-dasharray="1.8,3.2"/>
 		<TextSymbolizer face-name="DejaVu Sans Bold" size="9" fill="black" opacity="0.7"
@@ -500,7 +506,7 @@
 	<Rule>
 		&maxscale_zoom16;
 		&minscale_zoom16;
-		<Filter>([trail_visibility] is null or ([trail_visibility]!='no' and [trail_visibility]!='horrible' and [trail_visibility]!='bad')) and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and ([sac_scale] is null or [sac_scale] = 'mountain_hiking') and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
+		<Filter>([trail_visibility] is null or ([trail_visibility]!='no' and [trail_visibility]!='horrible' and [trail_visibility]!='bad')) and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and ([sac_scale] = 'mountain_hiking') and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
 		<LineSymbolizer stroke="black" stroke-width="1.5" stroke-dasharray="1.8,3.2"/>
 		<TextSymbolizer face-name="DejaVu Sans Bold" size="9" fill="black" opacity="0.7"
 		    halo-fill="rgba(255,255,255,0.7)" halo-radius="1.0"
@@ -560,6 +566,12 @@
 	<Rule>
 		&maxscale_zoom16;
 		&minscale_zoom16;
+		<Filter>([trail_visibility]='no' or [trail_visibility]='horrible' or [trail_visibility]='bad') and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and [sac_scale] is null and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
+		<LineSymbolizer stroke="black" stroke-width="1.5" stroke-dasharray="1.8,3.2" stroke-opacity="0.5"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom16;
+		&minscale_zoom16;
 		<Filter>([trail_visibility]='no' or [trail_visibility]='horrible' or [trail_visibility]='bad') and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and [sac_scale] = 'hiking' and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
 		<LineSymbolizer stroke="black" stroke-width="1.5" stroke-dasharray="1.8,3.2" stroke-opacity="0.5"/>
 		<TextSymbolizer face-name="DejaVu Sans Bold" size="9" fill="black" opacity="0.4"
@@ -572,7 +584,7 @@
 	<Rule>
 		&maxscale_zoom16;
 		&minscale_zoom16;
-		<Filter>([trail_visibility]='no' or [trail_visibility]='horrible' or [trail_visibility]='bad') and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and ([sac_scale] is null or [sac_scale] = 'mountain_hiking') and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
+		<Filter>([trail_visibility]='no' or [trail_visibility]='horrible' or [trail_visibility]='bad') and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and ([sac_scale] = 'mountain_hiking') and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
 		<LineSymbolizer stroke="black" stroke-width="1.5" stroke-dasharray="1.8,3.2" stroke-opacity="0.5"/>
 		<TextSymbolizer face-name="DejaVu Sans Bold" size="9" fill="black" opacity="0.4"
 		    halo-fill="rgba(255,255,255,0.7)" halo-radius="1.0"
@@ -653,6 +665,12 @@
 		<LineSymbolizer stroke="black" stroke-width="2.0" stroke-opacity="0.05"/>
 	</Rule>
 
+	<Rule>
+		&maxscale_zoom17;
+		&minscale_zoom17;
+		<Filter>([trail_visibility] is null or ([trail_visibility]!='no' and [trail_visibility]!='horrible' and [trail_visibility]!='bad')) and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and [sac_scale] is null and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
+		<LineSymbolizer stroke="black" stroke-width="2.0" stroke-dasharray="2.4,4.4"/>
+	</Rule>
 <!-- visible path, sac_scale=T1 (hiking), no ferrata — zoom17 -->
 	<Rule>
 		&maxscale_zoom17;
@@ -669,7 +687,7 @@
 	<Rule>
 		&maxscale_zoom17;
 		&minscale_zoom17;
-		<Filter>([trail_visibility] is null or ([trail_visibility]!='no' and [trail_visibility]!='horrible' and [trail_visibility]!='bad')) and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and ([sac_scale] is null or [sac_scale] = 'mountain_hiking') and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
+		<Filter>([trail_visibility] is null or ([trail_visibility]!='no' and [trail_visibility]!='horrible' and [trail_visibility]!='bad')) and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and ([sac_scale] = 'mountain_hiking') and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
 		<LineSymbolizer stroke="black" stroke-width="2.0" stroke-dasharray="2.4,4.4"/>
 		<TextSymbolizer face-name="DejaVu Sans Bold" size="10" fill="black" opacity="0.7"
 		    halo-fill="rgba(255,255,255,0.7)" halo-radius="1.0"
@@ -729,6 +747,12 @@
 	<Rule>
 		&maxscale_zoom17;
 		&minscale_zoom17;
+		<Filter>([trail_visibility]='no' or [trail_visibility]='horrible' or [trail_visibility]='bad') and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and [sac_scale] is null and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
+		<LineSymbolizer stroke="black" stroke-width="2.0" stroke-dasharray="2.4,4.4" stroke-opacity="0.5"/>
+	</Rule>
+	<Rule>
+		&maxscale_zoom17;
+		&minscale_zoom17;
 		<Filter>([trail_visibility]='no' or [trail_visibility]='horrible' or [trail_visibility]='bad') and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and [sac_scale] = 'hiking' and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
 		<LineSymbolizer stroke="black" stroke-width="2.0" stroke-dasharray="2.4,4.4" stroke-opacity="0.5"/>
 		<TextSymbolizer face-name="DejaVu Sans Bold" size="10" fill="black" opacity="0.4"
@@ -741,7 +765,7 @@
 	<Rule>
 		&maxscale_zoom17;
 		&minscale_zoom17;
-		<Filter>([trail_visibility]='no' or [trail_visibility]='horrible' or [trail_visibility]='bad') and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and ([sac_scale] is null or [sac_scale] = 'mountain_hiking') and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
+		<Filter>([trail_visibility]='no' or [trail_visibility]='horrible' or [trail_visibility]='bad') and ([via_ferrata_scale] is null or [via_ferrata_scale] = '0') and ([sac_scale] = 'mountain_hiking') and (([highway] = 'path' and [surface] != 'asphalt') or [highway] = 'footway' or [highway] = 'bridleway')</Filter>
 		<LineSymbolizer stroke="black" stroke-width="2.0" stroke-dasharray="2.4,4.4" stroke-opacity="0.5"/>
 		<TextSymbolizer face-name="DejaVu Sans Bold" size="10" fill="black" opacity="0.4"
 		    halo-fill="rgba(255,255,255,0.7)" halo-radius="1.0"
