@@ -1,6 +1,6 @@
 <Style name="hillshade-5000">
 	<Rule>
-		&maxscale_zoom1;
+		&maxscale_zoom0;
 		&minscale_zoom3;
 		<RasterSymbolizer comp-op="grain-merge" opacity="0.83" scaling="bicubic" />
 	</Rule>
