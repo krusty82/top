@@ -16,13 +16,13 @@
 		&maxscale_zoom13;
 		&minscale_zoom13;
 		<Filter>([ele] % 100 = 0)</Filter>
-		<LineSymbolizer stroke="#c45700" stroke-width="0.5" />
+		<LineSymbolizer stroke="#c45700" stroke-width="0.5" comp-op="multiply"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
 		<Filter>([ele] % 100 = 0)</Filter>
-		<LineSymbolizer stroke="#c45700" stroke-width="0.6" smooth="0.8"  comp-op="multiply"/>
+		<LineSymbolizer stroke="#c45700" stroke-width="0.6" smooth="1"  comp-op="multiply"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom13;
@@ -53,10 +53,16 @@
 		<LineSymbolizer stroke="#c45700" stroke-width="0.2"  comp-op="multiply"/>
 	</Rule>
 	<Rule>
+		&maxscale_zoom12;
+		&minscale_zoom12;
+		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0)</Filter>
+		<LineSymbolizer stroke="#c45700" stroke-width="0.25" comp-op="multiply"/>
+	</Rule>
+	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom13;
 		<Filter>([ele] % 100 != 0) and ([ele] % 50 = 0)</Filter>
-		<LineSymbolizer stroke="#c45700" stroke-width="0.3" />
+		<LineSymbolizer stroke="#c45700" stroke-width="0.3" comp-op="multiply"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
@@ -99,7 +105,7 @@
 		&maxscale_zoom13;
 		&minscale_zoom13;
 		<Filter>([ele] % 50 != 0) and ([ele] % 10 = 0)</Filter>
-		<LineSymbolizer stroke="#c45700" stroke-width="0.2" smooth="0.5" />
+		<LineSymbolizer stroke="#c45700" stroke-width="0.2" smooth="1" comp-op="multiply"/>
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
