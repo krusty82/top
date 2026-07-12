@@ -18,7 +18,7 @@
 		&minscale_zoom17;
 		<Filter>[direction]=null and [railway] = 'station' and not ([subway] = 'yes' or [station] = 'subway')</Filter>
 		<PointSymbolizer file="symbols-otm/station_square.svg" allow-overlap="true" />
-		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="black" halo-radius="2" halo-fill="rgba(255,255,255,0.8)" placement="point" allow-overlap="true" dy="5" wrap-width="100">[name]</TextSymbolizer>
+		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.8)" placement="point" allow-overlap="true" dy="5" wrap-width="100">[name]</TextSymbolizer>
 	</Rule>
 
 	<Rule>
@@ -32,7 +32,7 @@
 		&minscale_zoom17;
 		<Filter>[direction]=null and [railway] = 'halt' and not ([subway] = 'yes' or [station] = 'subway')</Filter>
 		<PointSymbolizer file="symbols-otm/station_square.svg" allow-overlap="true" />
-		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="black" halo-radius="2" halo-fill="rgba(255,255,255,0.8)" placement="point" allow-overlap="true" dy="5" wrap-width="100">[name]</TextSymbolizer>
+		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.8)" placement="point" allow-overlap="true" dy="5" wrap-width="100">[name]</TextSymbolizer>
 	</Rule>
 
 <!-- Stations with rotation -->
@@ -66,7 +66,7 @@
 		&minscale_zoom17;
 		<Filter>[direction]!=null and [railway] = 'station' and not ([subway] = 'yes' or [station] = 'subway')</Filter>
 		<PointSymbolizer file="symbols-otm/station_rect.svg" allow-overlap="true"  transform="rotate([direction]) scale(1.2)"/>
-		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="black" halo-radius="2" halo-fill="rgba(255,255,255,0.8)" placement="point" allow-overlap="true" dy="7" wrap-width="100">[name]</TextSymbolizer>
+		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.8)" placement="point" allow-overlap="true" dy="7" wrap-width="100">[name]</TextSymbolizer>
 	</Rule>
 
 	<!-- railway=halt -->
@@ -93,7 +93,7 @@
 		&minscale_zoom17;
 		<Filter>[direction]!=null and [railway] = 'halt' and not ([subway] = 'yes' or [station] = 'subway')</Filter>
 		<PointSymbolizer file="symbols-otm/station_rect.svg" allow-overlap="true"  transform="rotate([direction]) scale(0.9)"/>
-		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="black" halo-radius="2" halo-fill="rgba(255,255,255,0.8)" placement="point" allow-overlap="true" dy="7" wrap-width="100">[name]</TextSymbolizer>
+		<TextSymbolizer fontset-name="sans-oblique" size="9" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.8)" placement="point" allow-overlap="true" dy="7" wrap-width="100">[name]</TextSymbolizer>
 	</Rule>
 
 </Style>

@@ -73,3 +73,9 @@ CREATE INDEX planet_osm_point_viewpoint_idx
 ON planet_osm_point (way)
 WHERE tourism = 'viewpoint'
   AND direction IS NOT NULL;
+  
+CREATE INDEX planet_osm_point_aeroway_idx
+ON planet_osm_point (aeroway);
+
+CREATE INDEX planet_osm_poly_aeroway_idx
+ON planet_osm_polygon (aeroway);

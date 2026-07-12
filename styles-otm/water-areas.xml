@@ -35,28 +35,28 @@
 		&maxscale_zoom11;
 		&minscale_zoom13;
 		<Filter>([natural] = 'water' or [landuse] = 'basin' or [landuse] = 'reservoir') and ([way_area] &gt; 50000) and ([waterway] != 'riverbank') and ([intermittent] = 'yes')</Filter>
-        <PolygonPatternSymbolizer file="symbols-otm/water-intermittent.png"/>
+        <PolygonPatternSymbolizer file="symbols-otm/water-intermittent_100.png"/>
 		<LineSymbolizer stroke="blue" stroke-width="0.5" />
 	</Rule>
 	<Rule>
 		&maxscale_zoom11;
 		&minscale_zoom12;
 		<Filter>([natural] = 'water' or [landuse] = 'basin' or [landuse] = 'reservoir') and ([way_area] &lt; 50000) and ([waterway] != 'riverbank') and ([intermittent] = 'yes')</Filter>
-        <PolygonPatternSymbolizer file="symbols-otm/water-intermittent.png"/>
+        <PolygonPatternSymbolizer file="symbols-otm/water-intermittent_100.png"/>
 		<LineSymbolizer stroke="blue" stroke-width="0.5" stroke-opacity="0.5" />
 	</Rule>
 	<Rule>
 		&maxscale_zoom13;
 		&minscale_zoom13;
 		<Filter>([natural] = 'water' or [landuse] = 'basin' or [landuse] = 'reservoir') and ([way_area] &lt; 50000) and ([waterway] != 'riverbank') and ([intermittent] = 'yes')</Filter>
-        <PolygonPatternSymbolizer file="symbols-otm/water-intermittent.png"/>
+        <PolygonPatternSymbolizer file="symbols-otm/water-intermittent_100.png"/>
 		<LineSymbolizer stroke="blue" stroke-width="0.5" stroke-opacity="0.7" />
 	</Rule>
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom17;
 		<Filter>([natural] = 'water' or [landuse] = 'basin' or [landuse] = 'reservoir') and ([waterway] != 'riverbank') and ([intermittent] = 'yes')</Filter>
-        <PolygonPatternSymbolizer file="symbols-otm/water-intermittent.png"/>
+        <PolygonPatternSymbolizer file="symbols-otm/water-intermittent_100.png"/>
 		<LineSymbolizer stroke="blue" stroke-width="0.5" />
 	</Rule>
 
