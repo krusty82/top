@@ -29,7 +29,10 @@
         <Rule>
                 &maxscale_zoom0;
                 &minscale_zoom17;
-                <PolygonSymbolizer fill="#d0f8ff" fill-opacity="0.9"/>
+			<PolygonSymbolizer 
+				fill="#d0f8ff"
+				fill-opacity="0.9"
+				gamma="0.5"/>
         </Rule>
 </Style>
 

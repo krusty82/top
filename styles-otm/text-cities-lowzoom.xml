@@ -42,7 +42,7 @@
 		&minscale_zoom6;
 		<Filter>([capital] = 'yes' and [population] &gt; 25E3)</Filter>
 		<PointSymbolizer file="symbols-otm/city.svg"/>
-		<TextSymbolizer fontset-name="sans-condensed-bold" size="12" fill="black" halo-radius="1.5" wrap-width="100" placement="point" dx="5" dy="-3" text-transform="uppercase" placement-type="list">[name]
+		<TextSymbolizer fontset-name="sans-condensed-bold" size="12" fill="black" halo-radius="1.5" wrap-width="100" placement="point" dx="5" dy="-3" text-transform="uppercase" placement-type="list" allow-overlap="true">[name]
 			<Placement dx="5" dy="-4" />
 			<Placement dx="0" dy="7" />
 			<Placement dx="5" dy="3" />
@@ -79,14 +79,14 @@
 	<Rule>
 		&maxscale_zoom9;
 		&minscale_zoom9;
-		<Filter>([capital] = 'yes' and [admin_level] = '2')</Filter>
+		<Filter>([capital] = 'yes')</Filter>
 		<PointSymbolizer file="symbols-otm/city.svg"/>
 		<TextSymbolizer fontset-name="sans-condensed-bold" size="16" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.8)" wrap-width="100" text-transform="uppercase" placement="point" dx="10" dy="-5">[name]</TextSymbolizer>
 	</Rule>
 	<Rule>
 		&maxscale_zoom10;
 		&minscale_zoom10;
-		<Filter>([capital] = 'yes' and [admin_level] = '2')</Filter>
+		<Filter>([capital] = 'yes')</Filter>
 		<PointSymbolizer file="symbols-otm/city.svg"/>
 		<TextSymbolizer fontset-name="sans-condensed-bold" size="18" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.8)" wrap-width="100" text-transform="uppercase" placement="point" dx="11" dy="-6">[name]</TextSymbolizer>
 	</Rule>

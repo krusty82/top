@@ -124,18 +124,18 @@
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<Filter>([place] = 'town') and ([population] &gt; 50000)</Filter>
-		<TextSymbolizer fontset-name="sans-condensed" size="33" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.8)" character-spacing="15" wrap-width="100" placement="point">[name]</TextSymbolizer>
+		<TextSymbolizer fontset-name="sans-condensed" size="33" fill="black" halo-radius="2" halo-fill="rgba(255,255,255,0.8)" character-spacing="15" wrap-width="100" placement="point">[name]</TextSymbolizer>
 	</Rule>
 	<Rule>
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<Filter>([place] = 'town') and ([population] &lt; 50000) and ([population] &gt; 10000)</Filter>
-		<TextSymbolizer fontset-name="sans-condensed" size="30" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.8)" character-spacing="15" wrap-width="100" placement="point">[name]</TextSymbolizer>
+		<TextSymbolizer fontset-name="sans-condensed" size="30" fill="black" halo-radius="2" halo-fill="rgba(255,255,255,0.8)" character-spacing="15" wrap-width="100" placement="point">[name]</TextSymbolizer>
 	</Rule>
 	<Rule>
 		&maxscale_zoom15;
 		&minscale_zoom15;
 		<Filter>([place] = 'town') and not ([population] &gt; 10000)</Filter>
-		<TextSymbolizer fontset-name="sans-condensed" size="25" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.8)" character-spacing="10" wrap-width="100" placement="point">[name]</TextSymbolizer>
+		<TextSymbolizer fontset-name="sans-condensed" size="25" fill="black" halo-radius="2" halo-fill="rgba(255,255,255,0.8)" character-spacing="10" wrap-width="100" placement="point">[name]</TextSymbolizer>
 	</Rule>
 </Style>
