@@ -640,7 +640,7 @@
     <Layer name="text-natural-poly">
         <StyleName>text-natural-poly</StyleName>
         <Datasource>
-            <Parameter name="table">(SELECT way,get_localized_placename(name,"name:de",int_name,"name:en",true) as name,"natural",leisure,way_area FROM planet_osm_polygon WHERE ("natural"='nature_reserve')) AS names
+            <Parameter name="table">(SELECT way,get_localized_placename(name,"name:de",int_name,"name:en",true) as name,"natural",leisure,way_area FROM planet_osm_polygon WHERE (leisure='nature_reserve')) AS names
             </Parameter>
             <Parameter name="dbname">gis</Parameter>
             &postgis-settings;
