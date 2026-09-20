@@ -37,7 +37,7 @@
 
 <!-- Stations with rotation -->
 	<!-- railway=station -->
-<--	<Rule>
+<!--	<Rule>
 		&maxscale_zoom11;
 		&minscale_zoom11;
 		<Filter>[direction]!=null and [railway] = 'station' and not ([subway] = 'yes' or [station] = 'subway')</Filter>
