@@ -59,7 +59,7 @@ echo "Simplifying countries and states..."
 psql -d gis -c "CREATE OR REPLACE VIEW lowzoom_countries AS SELECT way,get_localized_placename(name,\"name:de\",int_name,\"name:en\",true) as name,place,population::integer FROM planet_osm_point WHERE place IN ('country','state');"
 psql -d lowzoom -c "CREATE TABLE countries (way geometry(Point,3857), name text, place text, population integer);"
 psql -d lowzoom -c "INSERT INTO countries SELECT * FROM dblink('dbname=gis','SELECT * FROM lowzoom_countries') AS t(way geometry(Point,3857), name text, place text, population integer);"
-psql -d lowzoom -c "CREATE INDEX countries_way_idx ON countries USING GIST (way);"
+psql -d lowzoom -c "CREATE INDEX countries_way_idx ON cities USING GIST (way);"
 
 
 # water polygon labels

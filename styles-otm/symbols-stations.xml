@@ -37,12 +37,12 @@
 
 <!-- Stations with rotation -->
 	<!-- railway=station -->
-<--	<Rule>
+	<Rule>
 		&maxscale_zoom11;
 		&minscale_zoom11;
 		<Filter>[direction]!=null and [railway] = 'station' and not ([subway] = 'yes' or [station] = 'subway')</Filter>
 		<PointSymbolizer file="symbols-otm/station_rect.svg" allow-overlap="true" transform="rotate([direction]) scale(0.7)"/>
-	</Rule> -->
+	</Rule>
 	<Rule>
 		&maxscale_zoom12;
 		&minscale_zoom12;
