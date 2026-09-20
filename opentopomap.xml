@@ -223,7 +223,7 @@
         <StyleName>contours</StyleName>
         <Datasource>
             <Parameter name="table">(SELECT way,ele FROM planet_osm_line) AS contours</Parameter>
-            <Parameter name="dbname">contours2</Parameter>
+            <Parameter name="dbname">contours</Parameter>
             &postgis-settings;
         </Datasource>
     </Layer>
@@ -464,7 +464,7 @@
         </Datasource>
     </Layer>
     
-<!-- <Layer name="ferry-routes">
+<Layer name="ferry-routes">
     <StyleName>ferry-routes</StyleName>
     <Datasource>
        	<Parameter name="table">(SELECT way,route,name FROM planet_osm_line WHERE route = 'ferry' AND osm_id > 0) AS route </Parameter>
@@ -473,10 +473,9 @@
         <Parameter name="dbname">gis</Parameter>
         &postgis-settings;
     </Datasource>
-</Layer> -->
+</Layer> 
 <Layer name="ferry-routes-lowzoom">
     <StyleName>ferry-routes-lowzoom</StyleName>
-	<StyleName>ferry-routes</StyleName>
     <Datasource>
         <Parameter name="table">
 			ferry_routes_lowzoom
