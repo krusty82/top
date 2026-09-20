@@ -157,6 +157,7 @@ node,way   ruins        text         polygon
 way        sac_scale    text         linear
 node,way   service      text         linear
 node,way   shop         text         polygon
+node,way   shelter_type text         linear
 node,way   site_type    text         polygon
 node,way   sport        text         polygon
 node,way   station      text         polygon

@@ -259,21 +259,46 @@
 	<Rule>
 		&maxscale_zoom14;
 		&minscale_zoom15;
- 		<Filter>([amenity] = 'shelter') </Filter>
+		<Filter>([amenity] = 'shelter') and not ([shelter_type] = 'rock_shelter')</Filter>
 		<PointSymbolizer file="symbols-otm/shelter.svg" transform="scale(1.0)"/>
 	</Rule>
+
 	<Rule>
 		&maxscale_zoom16;
 		&minscale_zoom17;
- 		<Filter>([amenity] = 'shelter') </Filter>
+		<Filter>([amenity] = 'shelter') and not ([shelter_type] = 'rock_shelter')</Filter>
 		<PointSymbolizer file="symbols-otm/shelter.svg" transform="scale(1.5)"/>
 	</Rule>
+	
+	<Rule>
+		&maxscale_zoom14;
+		&minscale_zoom15;
+		<Filter>([amenity] = 'shelter') and ([shelter_type] = 'rock_shelter')</Filter>
+		<PointSymbolizer file="symbols-otm/rock_shelter.svg" transform="scale(1.0)"/>
+	</Rule>
+
+	<Rule>
+		&maxscale_zoom16;
+		&minscale_zoom17;
+		<Filter>([amenity] = 'shelter') and ([shelter_type] = 'rock_shelter')</Filter>
+		<PointSymbolizer file="symbols-otm/rock_shelter.svg" transform="scale(1.5)"/>
+	</Rule>
+
 	<Rule>
 		&maxscale_zoom17;
 		&minscale_zoom17;
- 		<Filter>([amenity] = 'shelter') </Filter>
+		<Filter>([amenity] = 'shelter') and not ([shelter_type] = 'rock_shelter')</Filter>
 		<PointSymbolizer file="symbols-otm/shelter.svg" transform="scale(1.5)"/>
-		<TextSymbolizer fontset-name="sans-oblique" size="10" fill="black" halo-radius="1.5" halo-fill="rgba(255,255,255,0.7)" placement="point" dy="6" wrap-width="100" wrap-before="true">[name]</TextSymbolizer>
+		<TextSymbolizer
+			fontset-name="sans-oblique"
+			size="10"
+			fill="black"
+			halo-radius="1.5"
+			halo-fill="rgba(255,255,255,0.7)"
+			placement="point"
+			dy="6"
+			wrap-width="100"
+			wrap-before="true">[name]</TextSymbolizer>
 	</Rule>
 	<Rule>
 		&maxscale_zoom13;
